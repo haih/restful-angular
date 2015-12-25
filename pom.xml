@@ -3,7 +3,7 @@
 	<modelVersion>4.0.0</modelVersion>
 
 	<groupId>haih</groupId>
-	<artifactId>rest-api</artifactId>
+	<artifactId>restful-scaffold</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
 	<packaging>war</packaging>
 
@@ -78,7 +78,4 @@
 			<version>1.17.1</version>
 		</dependency>
 	</dependencies>
-	<build>
-		<finalName>hai</finalName>
-	</build>
 </project>

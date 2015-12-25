@@ -1,7 +1,7 @@
 /**
  * 
  */
-package com.haih.resting.order.resources;
+package com.haih.resting.resources;
 
 import javax.ws.rs.GET;
 import javax.ws.rs.Path;
@@ -11,6 +11,8 @@ import javax.ws.rs.core.Response;
 
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
+
+import com.haih.utils.generic.ResponseUtil;
 
 
 /**
@@ -23,14 +25,13 @@ public class OrderResource {
 
 	public static final Logger logger = LoggerFactory.getLogger(OrderResource.class);
 	
+	@Path("/testinfo")
 	@GET
-	@Path("getTestinfo")
 	@Produces(MediaType.APPLICATION_JSON)
 	public Response getTestinfo(){
-		System.out.println("getTestInfo begin~");
-		logger.info("getTestInfo begin~");
+		logger.info("testInfo begin~");
 		
-		return Response.status(200).entity("sdf").build();
+		return ResponseUtil.buildNoCacheResponse(Response.status(200).entity("sdfsdf"));
 	}
 	
 }
